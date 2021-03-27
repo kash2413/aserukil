@@ -1,0 +1,216 @@
+/* Media Voice Sponsorship styling */
+
+.cb-grid-block .cb-sponsor {
+	position: absolute;
+	background: #c99829;
+	padding: 5px 8px;
+	top: 0;
+	right: 0;
+	font-size: 12px;
+}
+.cb-grid-block .cb-sponsor * {
+	font-weight: normal !important;
+	color: #fff !important;
+	margin: 0 !important;
+	transform: none !important;
+}
+
+.page-template-sponsored #cb-standard-featured .cb-entry-header .cb-title-fi .cb-entry-title {
+	font-size: 40px;
+	padding-right: 115px;
+}
+.type-page #jp-sponsored-content-wrap {
+	position:relative;
+	top:-93px;
+}
+.type-page #jp-sponsored-content {
+	top: 0;
+	right: 0;
+	margin-top: 0;
+}
+.type-page #jp-sponsored-content-wrap .cb-sponsor a,
+.type-page #jp-sponsored-content-wrap .cb-sponsor div {
+	display: block;
+}
+.type-page #jp-sponsored-content-wrap .cb-sponsor img {
+	width: auto !important;
+	height: auto !important;
+	max-width: 100px !important;
+	max-height: 60px !important;
+}
+.type-page .cb-sponsor .cb-sponsor-by a span,
+.type-page .cb-sponsor .cb-sponsor-by span {
+	margin-right: 0;
+}
+div.nativeads-cta.nativeads-cta-sponsorlogolink {
+	padding: 10px 0 0 0;
+}
+
+section .flexslider-1-fw .slides li .cb-sponsor,
+section .flexslider-1 .slides li .cb-sponsor,
+section .flexslider-1-fw-menu .slides li .cb-sponsor,
+section .flexslider-1-menu .slides li .cb-sponsor,
+section .flexslider-2-fw .slides li .cb-sponsor,
+section .flexslider-2 .slides li .cb-sponsor {
+	position: absolute;
+	top: 20px;
+	right: 50px;
+}
+section .flexslider-1-fw .slides li .cb-sponsor *,
+section .flexslider-1 .slides li .cb-sponsor *,
+section .flexslider-1-fw-menu .slides li .cb-sponsor *,
+section .flexslider-1-menu .slides li .cb-sponsor *,
+section .flexslider-2-fw .slides li .cb-sponsor *,
+section .flexslider-2 .slides li .cb-sponsor * {
+	color: #fff !important;
+}
+
+
+article .cb-sponsor {
+	margin-top: 5px;
+}
+
+.cb-sponsor {
+	display: table;
+}
+.cb-sponsor > a {
+	padding-right: 10px;
+}
+.cb-sponsor img {
+	width: auto !important;
+	height: auto !important;
+	max-width: 100px !important;
+	max-height: 60px !important;
+	vertical-align: middle;
+}
+.cb-sponsor a,
+.cb-sponsor div {
+	display: table-cell;
+	vertical-align: middle;
+}
+div.nativeads-cta.nativeads-cta-sponsorlogolink {
+	padding: 5px 0px 0px;
+}
+.cb-sponsor .cb-sponsor-by a,
+.cb-sponsor .cb-sponsor-by {
+	font-size: 12px;
+	color: #0f0f0f;
+	font-weight: bold;
+}
+.cb-sponsor .cb-sponsor-by a:hover {
+	color: #c99829;
+	text-decoration: none !important;
+	border: none;
+}
+.cb-sponsor .cb-sponsor-by a span,
+.cb-sponsor .cb-sponsor-by span {
+	background: #c99829;
+	padding: 3px 8px;
+	color: #fff;
+	display: inline-block;
+	font-size: 10px;
+	margin-right: 5px;
+	letter-spacing: 1px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+.cb-dark .cb-sponsor .cb-sponsor-by a,
+.cb-dark .cb-sponsor .cb-sponsor-by {
+	color: #e5e5e5;
+}
+
+/* fix cropping and stretching of images in mosiac */
+
+#cb-content .cb-feature-4 div.cb-grid-img,
+#cb-content .cb-feature-4 .cb-grid-img a{
+	height:100%;
+	width:100%;
+	position: relative;
+	display: block;
+	overflow: none;
+}
+/* Best fit to try and shoe horn in img - if very wide or high it'll show black background... */
+#cb-content .cb-feature-4 .cb-grid-img img{
+	max-height: 150%;
+    max-width: 150%;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    /* - no support on MS for object fit 
+	object-fit: cover;
+    min-height: 100%;
+    min-width: 100%;
+    */
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1199px) {
+	.cb-sponsor > a {
+		display: table-footer-group;
+	}
+
+	.cb-sponsor > a > img {
+		margin-top: 5px;
+	}
+
+	.cb-sponsor div {
+		display: table-header-group;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+	.cb-small li .cb-sponsor:before {
+		content: 'Sponsor';
+		display: block;
+		background: #C99829;
+		padding: 3px 8px;
+		color: #fff;
+		display: inline-block;
+		font-size: 10px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		width: 64px;
+		text-align: center;
+	}
+	.cb-small li .cb-sponsor .cb-sponsor-by {
+		display: none;
+	}
+	.cb-sponsor > a {
+		display: table-footer-group;
+	}
+	.cb-sponsor > a > img {
+		margin-top: 5px;
+	}
+	.cb-sponsor div {
+		display: table-header-group;
+	}
+}
+
+
+@media (max-width: 480px) {
+
+
+	.page-template-sponsored .type-page #cb-standard-featured .cb-entry-header .cb-title-fi .cb-entry-title {
+		font-size: 40px;
+		padding-right: 0;
+	}
+	.type-page #jp-sponsored-content-wrap {
+		position: static;
+		top: auto;
+		height: auto;
+		width: 100%;
+	}
+	.type-page #jp-sponsored-content {
+		position: static;
+		overflow: hidden;
+		display: table;
+	}
+	.type-page #jp-sponsored-content-wrap .cb-sponsor div {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	#jp-sponsored-content-wrap #sponsor-logo img {
+		margin-left: 10px;
+	}
+}
